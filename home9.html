@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+      .gap {
+        gap: 1rem;
+        /* column-gap: 0.5rem;
+        row-gap: 2.5rem; */
+      }
+      .box {
+        --tw-bg-opacity: 1;
+        background-color: rgba(147, 197, 253, var(--tw-bg-opacity));
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid gap">
+      <div class="box">01</div>
+      <div class="box">02</div>
+      <div class="box">03</div>
+      <div class="box">04</div>
+      <div class="box">05</div>
+      <div class="box">06</div>
+      <div class="box">07</div>
+      <div class="box">08</div>
+      <div class="box">09</div>
+    </div>
+    <img
+      src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fa59gtskckoh7ms1uk1h.png"
+      alt=""
+      srcset=""
+      style="width: 100%; height: auto"
+    />
+  </body>
+</html>

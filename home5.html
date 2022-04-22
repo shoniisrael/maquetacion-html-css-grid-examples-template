@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid {
+        display: grid;
+        /* grid-template-columns: repeat(4, minmax(0, 1fr)); */
+        grid-template-rows: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+      }
+      .grid-flow-col {
+        grid-auto-flow: column;
+      }
+      .box {
+        --tw-bg-opacity: 1;
+        background-color: rgba(147, 197, 253, var(--tw-bg-opacity));
+      }
+      .row-span-2 {
+        grid-row-end: span 2;
+      }
+      .row-span-3 {
+        grid-row-end: span 3;
+      }
+      .col-span-2 {
+        grid-column-end: span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid grid-flow-col">
+      <div class="box row-span-3">01</div>
+      <div class="box col-span-2">02</div>
+      <div class="box row-span-2 col-span-2">03</div>
+    </div>
+  </body>
+</html>
